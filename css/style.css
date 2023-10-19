@@ -1,0 +1,36 @@
+
+/* the color pallet for the web page will be red #E90808, orange #FF6D00, and yellow #FFDC00 with 
+black #000 and white #fff throughout*/
+
+body {
+    font-family: "Segoe UI Semilight", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #E90808;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+.pokemonList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: .5em solid orange;
+    border-radius: 10px;
+    background-color: yellow;
+    padding: 1em;
+    text-align: left;
+    box-sizing: border-box;
+}
+
