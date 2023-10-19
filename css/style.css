@@ -10,7 +10,7 @@ body {
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
     color: #E90808;
   }
@@ -19,6 +19,11 @@ body {
     font-size: 24px;
     font-weight: 700;
   }
+
+.page-header__item {
+    width: 200px;
+    height: auto;
+}
 
 .pokemonList {
     display: flex;
@@ -32,5 +37,12 @@ body {
     padding: 1em;
     text-align: left;
     box-sizing: border-box;
+    width: 50%;
+    height: auto;
+}
+
+#pokeballImg {
+    width: 50%;
+    height: auto;
 }
 
