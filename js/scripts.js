@@ -27,8 +27,45 @@ for (let i = 0; i < pokemonList.length; i++) {
   
   } //End for loop of pokemon height
 */
+
+  //create IIFE for pokemonList, fist create pokemonRepositry variable
+  let pokemonRepository = (function () {
+    let pokemonList = [
+        {name:'Charizard' , height: 5.7 , type: ['Fire', 'Flying']},
+        {name: 'Nidoqueen', height: 4.3, type: ['Poison, Ground']},
+        {name: 'Gyarados', height: 21.4, type: ['Water', 'Flying']},
+        {name: 'Tentacruel', height: 5.3, type: ['Water', 'Poison']},
+        {name: 'Moltres', height: 6.7, type: ['Fire', 'Flying']}
+    ];
+  
+    function getAll () {
+      return pokemonList;
+    }
+  
+    function add (pokemon) {
+      return pokemonList.push(pokemon)
+    };
+    
+    return {
+    getAll: getAll,
+      add: add
+    };
+  
+  
+  })();
+  
+  console.log(pokemonRepository.getAll())
+  pokemonRepository.add({name: 'Xatu', height: 4.11, type: ['Psychic', 'Flying'] });
+  console.log(pokemonRepository.getAll());
+  //End pokemonList IIFE
+
+  /*
   pokemonList.forEach(function(pokemon) {
     document.write("<p>" + pokemon.name + ' ' + '(height:' + pokemon.height + ')');
     console.log("<p>" + pokemon.name + ' ' + '(height:' + pokemon.height + ')');
   }); //End forEach look of pokemon height
+*/
+  pokemonRepository.getAll().forEach(function(pokemon){
+    document.write("<p>" + pokemon.name + ' ' + '(height:' + pokemon.height + ')')
+  }); //End forEach look of pokemon height with IIFE pokemonRepository
 
