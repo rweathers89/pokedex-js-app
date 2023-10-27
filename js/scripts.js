@@ -10,7 +10,8 @@ let pokemonList = [
 /*this for loop will run through each pokemon listed in the array
 until it completes the loop. The height has a condition to list which
 pokemon are short, average height, or tall using the if and else if 
-conditions */
+conditions 
+
 for (let i = 0; i < pokemonList.length; i++) {
     if (pokemonList[i].height < 15.5 && pokemonList[i].height > 5.5) {
       document.write(pokemonList[i].name + ' ' + '(height:' + pokemonList[i].height + ')' + "<br>");
@@ -25,5 +26,9 @@ for (let i = 0; i < pokemonList.length; i++) {
     } //end tall height condition
   
   } //End for loop of pokemon height
-
+*/
+  pokemonList.forEach(function(pokemon) {
+    document.write("<p>" + pokemon.name + ' ' + '(height:' + pokemon.height + ')');
+    console.log("<p>" + pokemon.name + ' ' + '(height:' + pokemon.height + ')');
+  }); //End forEach look of pokemon height
 
