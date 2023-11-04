@@ -45,17 +45,37 @@ for (let i = 0; i < pokemonList.length; i++) {
     function add (pokemon) {
       return pokemonList.push(pokemon)
     };
+
+    //replaced document.write with functions to create list and buttons for each pokemon
+    function addListItem(pokemon) {
+      let pokemonList = document.querySelector('.pokemonList');
+      let listPokemon = document.createElement('li');
+      //create button element
+      let button = document.createElement('button');
+      button.innerText = pokemon.name;
+      button.classList.add('button_class');
+      listPokemon.appendChild(button);
+      pokemonList.appendChild(listPokemon);
+      button.addEventListener( 'click', function() {
+      showDetails(pokemon)
+      }); //end event listener for button
+    } //END pokemon addListItem function
+  
+    function showDetails(pokemon) {
+      console.log(pokemon);
+    }
     
     return {
     getAll: getAll,
-      add: add
+      add: add,
+      addListItem: addListItem
     };
   
   
-  })();
+  })(); //END of pokemonRepository function
   
   console.log(pokemonRepository.getAll())
-  pokemonRepository.add({name: 'Xatu', height: 4.11, type: ['Psychic', 'Flying'] });
+  //pokemonRepository.add({name: 'Xatu', height: 4.11, type: ['Psychic', 'Flying'] });
   console.log(pokemonRepository.getAll());
   //End pokemonList IIFE
 
@@ -66,6 +86,8 @@ for (let i = 0; i < pokemonList.length; i++) {
   }); //End forEach look of pokemon height
 */
   pokemonRepository.getAll().forEach(function(pokemon){
-    document.write("<p>" + pokemon.name + ' ' + '(height:' + pokemon.height + ')')
+    //document.write("<p>" + pokemon.name + ' ' + '(height:' + pokemon.height + ')')
+    //let listItem = document.createElement('li');
+    pokemonRepository.addListItem(pokemon);
   }); //End forEach look of pokemon height with IIFE pokemonRepository
 
