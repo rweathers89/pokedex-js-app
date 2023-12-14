@@ -50,7 +50,7 @@ body {
 }
 
 
-.btn {
+/*.btn {
   background-color: #E90808 border: none;
   color: white;
   padding: 16px 32px;
@@ -67,7 +67,7 @@ body {
   border: 2px solid #FF6D00;
   width: 250px;
   height: 100%;
-}
+}*/
 
 #modal-container {
   position: fixed;
