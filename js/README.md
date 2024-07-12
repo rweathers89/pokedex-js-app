@@ -1,12 +1,26 @@
-Project description: Pokedex is a pokemon database. It is an application that fetches data about the Pokemon from an external API, displays detaills of a Pokemon when clicked on the name.
+# Pokédex App
+A small web application built with HTML, CSS and JavaScript that loads data from an external API and enables the viewing of data points in detail. 
 
-How to get the project running: click on the buttons to view details of each pokemon listed
+## My Role
+- Create the database using JavaScript and pokeapi.co 
+- Style the site using CSS
+- Created the logo using Affinity Designer
 
-Project dependencies: HTML, CSS, JavaScript, JQuery, ESLint rules, bootstrap
+## Key Features
+- Load data from an external API
+- View a list of items
+- On user action, view details for that item
 
-API used: https://pokeapi.co/
+## Dependencies
 
-Link to project: https://github.com/rweathers89/pokedex-js-app 
+To enable optimal functioning, it is recommended that you run this application using the following tools:
 
-My role: create the database using JS and pokeapi, style the site, create the logo
+- jQuery
+- Bootstrap
+- JavaScript
+- HTML
+- CSS
 
+## Links
+
+The external API used in this project can be found [here](https://pokeapi.co/). To see the app in action, [click here](https://rweathers89.github.io/pokedex-js-app/).
