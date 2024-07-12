@@ -7,17 +7,31 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
+    background-image: url("./img/giorgio-trovato-DLeImMwOVyc-unsplash.jpg");
+    background-color: white;
   }
 
   h1 {
     font-size: 36px;
     font-weight: 700;
-    color: #E90808;
+    margin-left: 15%;
+  color: #E90808;
   }
   
   h2 {
     font-size: 24px;
     font-weight: 700;
+    color: black;
+    margin-left: 15%
+  }
+
+  p {
+    margin-left: 15%;
+  }
+
+  .container{
+    background-color: white;
+    
   }
 
 .page-header__item {
@@ -42,6 +56,7 @@ body {
     height: auto;
     /*removes the bullet points*/
     list-style: none;
+    margin-left: 15%;
 }
 
 #pokeballImg {
@@ -70,6 +85,7 @@ body {
 }*/
 
 #modal-container {
+  
   position: fixed;
   padding: 20px;
   box-sizing: border-box;
@@ -88,6 +104,7 @@ body {
   /* this is used to center the modal */
   display: grid;
   text-align: center;
+  display: none;
 }
 
 /*.modal {
@@ -116,10 +133,6 @@ body {
 
 .modal p {
   margin-bottom: 0;
-}
-
-#modal-container {
-  display: none;
 }
 
 #modal-container.is-visible {
